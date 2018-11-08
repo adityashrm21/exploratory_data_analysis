@@ -6,9 +6,9 @@ Aditya Sharma
 
 Inspiration: [Jenny Bryan's Cheatsheet](http://stat545.com/bit001_dplyr-cheatsheet.html).
 
-If you are initmidated by the name of joins on data frames or tables due to the confusion between many of them, you are not alone! I am compiling a cheatsheet here on a manually created dataset of my choice using Jenny's idea. I liked it so because it is so simple to understand once you understand it using the right amount of data. We want both the data frames to be as small as possible, while still retaining the expository value.
+If you are initmidated by the name of joins on data frames or tables due to the confusion between many of them, you are not alone! I am compiling a cheatsheet here on a manually created dataset of my choice using Jenny's idea. I liked it a lot because it is so simple to understand once you play with it using the right amount of data.
 
-For our cheatsheet, we are going to work with `bands` data and `labels` (record label information) data. Let us create both the required tibbles.
+For our cheatsheet, we are going to work with `bands` data and `labels` (record label information) data. Let us create both the required tibbles. We want both the data frames to be as small as possible, while still retaining the expository value.
 
 ``` r
 bands <- tribble(
@@ -221,4 +221,4 @@ As with the other direction, we get only one row for which the `record_label` en
 
 This is the most general form of join that contains all the information from both the tables. We have all rows of `x = bands` plus a new row from `y = labels`. We have all variables from `x = bands` and all variables from `y = labels`. The corresponding cell entries which are solely derived from one table or the other is filled with `NA`s for the variables found only in the other table.
 
-*Open a github issue or a pull request if you want some additions to this cheatsheet. Let's make it an awesome resource to learn joins!*
+*Open a github issue or a pull request if you want some additions to this cheatsheet or the repo. Let's make it an awesome resource to learn EDA!*
